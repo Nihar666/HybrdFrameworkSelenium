@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-04T15:10:52 IST" name="Suite" finished-at="2024-04-04T15:12:01 IST" duration-ms="68279">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.loginErrorMsgValidation()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" name="loginErrorMsgValidation" class="NiharSelenium.Tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.productErrorValidation()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" name="productErrorValidation" class="NiharSelenium.Tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2024-04-04T15:10:52 IST" name="Submit order Test" finished-at="2024-04-04T15:11:51 IST" duration-ms="58162">
+      <class name="NiharSelenium.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:NiharSelenium.Tests.SubmitOrderTest@53fd0d10]" started-at="2024-04-04T15:10:52 IST" name="launchApplication" finished-at="2024-04-04T15:11:40 IST" duration-ms="47530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder()[pri:0, instance:NiharSelenium.Tests.SubmitOrderTest@53fd0d10]" started-at="2024-04-04T15:11:40 IST" name="submitOrder" finished-at="2024-04-04T15:11:49 IST" duration-ms="8977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NiharSelenium.Tests.SubmitOrderTest@53fd0d10]" started-at="2024-04-04T15:11:49 IST" name="tearDown" finished-at="2024-04-04T15:11:51 IST" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NiharSelenium.Tests.SubmitOrderTest -->
+    </test> <!-- Submit order Test -->
+    <test started-at="2024-04-04T15:10:52 IST" name="Error validation Test" finished-at="2024-04-04T15:12:01 IST" duration-ms="68279">
+      <class name="NiharSelenium.Tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:10:52 IST" name="launchApplication" finished-at="2024-04-04T15:11:40 IST" duration-ms="47516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorMsgValidation()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:11:40 IST" name="loginErrorMsgValidation" finished-at="2024-04-04T15:11:44 IST" duration-ms="3668" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or .]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or .]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at NiharSelenium.Tests.ErrorValidationTest.loginErrorMsgValidation(ErrorValidationTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorMsgValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:11:45 IST" name="tearDown" finished-at="2024-04-04T15:11:46 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:11:46 IST" name="launchApplication" finished-at="2024-04-04T15:11:58 IST" duration-ms="11483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:11:58 IST" name="productErrorValidation" finished-at="2024-04-04T15:12:00 IST" duration-ms="2683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NiharSelenium.Tests.ErrorValidationTest@12ed9db6]" started-at="2024-04-04T15:12:00 IST" name="tearDown" finished-at="2024-04-04T15:12:01 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NiharSelenium.Tests.ErrorValidationTest -->
+    </test> <!-- Error validation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
